@@ -46,6 +46,10 @@ body:has(#toggle:checked) .home {
   padding-left: 10px;
 }
 
+.launcher-name {
+	text-align: center;
+}
+
 .icon-img {
   width: 23%;
   height: auto;
