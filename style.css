@@ -33,8 +33,10 @@ top {
 }
 
 body {
+  min-height: 100vh;
 	font-family: Arial, sans-serif;
-	background: #999aaa;
+	background: linear-gradient(to right bottom, #ff04b2, #d42bd0ff, #ff04b2);
+	background-size: 200% 300%;
 	margin: 0;
 }
 
@@ -43,7 +45,7 @@ body {
   outline-color: gray;
 }
 
-.card {
+.top-card {
   overflow: hidden;
 	max-width: 100%;
 	margin-left: 20px;
@@ -113,15 +115,4 @@ body {
   border-color: blue;
   outline: solid 2px;
   outline-color: green;
-}
-
-.bye {
-  font-size: 1px;
-}
-
-.bye a {
-  color: black;
-  text-decoration: none;
-  right: 0%;
-  position: absolute;
 }

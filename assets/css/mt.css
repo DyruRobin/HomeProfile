@@ -33,85 +33,86 @@ top {
 }
 
 body {
+  min-height: 100vh;
 	font-family: Arial, sans-serif;
-	background: #999aaa;
+	background: linear-gradient(to right bottom, #ff04b2, #d42bd0ff, #ff04b2);
+	background-size: 200% 300%;
 	margin: 0;
 }
 
-body:has(#toggle:checked) .home {
-  visibility: visible;
+.launcher {
+  position: fixed;
+  display: flex;
+  justify-content: start;
+  width: 100%;
+  gap: 1px;
 }
 
 .launcher-icon {
-  padding-left: 10px;
+  position: static;
+  padding: 1px;
+  margin: 1px;
 }
 
 .launcher-name {
-	text-align: center;
+  margin: 1px;
+  padding: 1px;
+}
+
+.img {
+  text-decoration: none;
 }
 
 .icon-img {
-  width: 23%;
+  width: 40px;
+  height: auto;
+  padding: 1px;
+  margin: 1px;
+}
+
+.launcherButton {
+  border: none;
+  background: none;
+  color: none;
+  width: auto;
   height: auto;
 }
 
-.home {
-  margin-top: -25%;
-  visibility: hidden;
-  position: relative;
-  background: white;
-  margin-right: 2%;
-  margin-left: 2%;
-  margin-bottom: 2%;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px black;
+.homeDialog {
+  background: linear-gradient(to right bottom, #ff1bd1, #b300c6ff);
+  position: absolute;
+  width: 80%;
+  height: 80%;
   border: 1.5mm outset pink;
-}
-
-.window {
-  position: relative;
+  border-radius: 10px;
+  padding-left: 5px;
+  padding-top: 0px;
+  padding-right: 5px;
+  padding-bottom: 5px;
 }
 
 .tab {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 4px;
+  position: fixed;
+  background: linear-gradient(to right bottom, #ff1bd1, #f324d9);
+  width: 80%;
+  height: 38px;
 }
 
-.b {
-  display: flex;
-  justify-content: safe end;
-}
-
-.tab-checkbox {
-  display: none;
-}
-
-.TA {
-  margin-right: 6px;
-}
-
-.button-max {
-  border-radius: 1px;
-  border-inline-width: 1px;
-}
-
-.window-name {
-  font-size: 18px;
-  margin-left: 3px;
-  margin-top: 1px;
-  margin-bottom: 1px;
+.tab-name {
+  font-size: 15px;
+  padding-left: 2px;
 }
 
 .inside-home {
-  background: gray;
+  position: static;
+  background: black;
+  margin-top: 38px;
   padding: 0px;
-  margin-top: 4px;
-  border-radius: 4px;
+  border-radius: 1px;
 }
 
 .row {
-  padding: 6px
+  padding: 1px;
 }
 
 .item {
@@ -128,7 +129,7 @@ body:has(#toggle:checked) .home {
   margin: 2px;
 }
 
-.text {
+.content {
   color: white;
   padding: 6px;
   margin-left: 2px;
@@ -138,9 +139,62 @@ body:has(#toggle:checked) .home {
   background: #390147;
 }
 
-.title:open {
-  background: red;
+.buttonImage {
+  width: 150px
+  height: auto;
 }
 
-.title:open p {
+.boxplayer {
+  background: linear-gradient(to right bottom, #ff1bd1, #b300c6ff);
+  position: absolute;
+  border: 1.5mm outset pink;
+  border-radius: 10px;
+  padding-left: 5px;
+  padding-top: 0px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  width: 80%;
+  height: 80%;
+}
+
+.tab {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tab-name {
+  font-size: 15px;
+}
+
+.Buttons {
+  display: flex;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.closeButton {
+  background: pink;
+  width: 28px;
+}
+
+.ytplayer {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+  width: 240px;
+  height: 427px;
+  border: none;
+  margin-bottom: -4px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.content-ytplayer {
+  display: flex;
+  justify-content: center;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-top: -2px;
+  margin-bottom: 3px;
+  background: #390147;
 }

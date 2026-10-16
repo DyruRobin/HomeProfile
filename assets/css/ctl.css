@@ -33,27 +33,33 @@ top {
 }
 
 body {
+  min-height: 100vh;
 	font-family: Arial, sans-serif;
-	background: #999aaa;
+	background: linear-gradient(to right bottom, #ff04b2, #d42bd0ff, #ff04b2);
+	background-size: 200% 300%;
 	margin: 0;
 }
 
 .items {
-  position: absolute;
+  position: relative;
   display: flex;
   flex-flow: wrap;
   justify-content: center;
   align-content: stretch;
-  padding: 6px;
+  margin: 0px;
   gap: 12px;
+  width: 100%;
+  height: 100%;
 }
 
 .pictures {
   display: flex;
   flex-flow: wrap;
-  justify-content: center;
-  width: 140px;
-  height: 140px;
+  justify-content: space-evenly;
+  width: 150px;
+  height: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
   gap: 10px;
   box-sizing: border-box;
 }

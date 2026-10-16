@@ -33,8 +33,10 @@ top {
 }
 
 body {
+  min-height: 100vh;
 	font-family: Arial, sans-serif;
-	background: #999aaa;
+	background: linear-gradient(to right bottom, #ff04b2, #d42bd0ff, #ff04b2);
+	background-size: 200% 300%;
 	margin: 0;
 }
 
