@@ -80,7 +80,7 @@ body {
 
 .homeDialog {
   background: linear-gradient(to right bottom, #ff1bd1, #b300c6ff);
-  position: absolute;
+  position: fixed;
   width: 80%;
   height: 80%;
   border: 1.5mm outset pink;
@@ -93,7 +93,7 @@ body {
 
 .tab {
   position: fixed;
-  background: linear-gradient(to right bottom, #ff1bd1, #f324d9);
+  background: linear-gradient(to right bottom, #ff1bd1, #e32ecb);
   width: 80%;
   height: 38px;
 }
