@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width", initial-scale=1.0>
-	<title>"enoD m'I"</title>
+	<title>"My Town."</title>
 	<link rel="stylesheet" href="../css/mt.css">
 </head>
 
@@ -37,7 +37,7 @@
       <dialog class="homeDialog" id="HomeArchive2">
         <div class="tab">
           <h1 class="tab-name">Home Archives.</h1>
-          <div class="Buttons">
+          <div class="theButtons">
             <button class="closeButton" commandFor="HomeArchive2" command="close" value="close">X</button>
           </div>
         </div>
@@ -60,8 +60,7 @@
                     <p>Then they're all went to a small mosque. The welcome from everyone there became even warmer and more full of love. They entered the mosque and sat there happily, with a small welcoming speech. Before the prayer, they prayed together, led by the mosque's caretaker, for A and A's baby.</p>
                     <p>At that moment, A was extremely thankful to God, to the baby, to A's life partner, to A's parents, to A's siblings, and to everyone who had been involved in A's life.</p>
                     <p>Once again, A was truly, deeply thankful from the bottom of A's heart.</p>
-                    <p>Without the baby and A's life partner, A would have been nothing more than a miserable man living without a purpose.</p>
-                    <p class="non-text">.-- .... .- - / .- / -... . - - . .-. / .-.. .. ..-. . / - .... .- - / --. ..- -.-- / .... .- ... .-.-.-</p>
+                    <p>Without the baby and A's life partner, A would have been nothing more than a miserable human living without a purpose.</p>
                   </div>
               </details>
             </div>
@@ -70,15 +69,15 @@
       </dialog>
     </figure>
     <figure class="launcher-icon">
-      <button class="launcherButton" commandFor="KoboScreaming" command="show-modal">
+      <button class="launcherButton" commandFor="Favourites" command="show-modal">
         <img src="../mytown/img/folder.png" class="icon-img">
         <figcaption class="launcher-name">Favourites</figcaption>
       </button>
-      <dialog class="boxplayer" id="KoboScreaming">
+      <dialog class="boxplayer" id="Favourites">
         <div class="tab">
           <h1 class="tab-name">Favourites.</h1>
-          <div class="Buttons">
-            <button class="closeButton" commandFor="KoboScreaming" command="close" value="close">X</button>
+          <div class="theButtons">
+            <button class="closeButton" commandFor="Favourites" command="close" value="close">X</button>
           </div>
         </div>
         <div class="inside-home">
@@ -87,7 +86,13 @@
               <details>
                 <summary class="title"><b>Kobo Screaming</b></summary>
                 <div class="content-ytplayer">
-                  <iframe class="ytplayer" id="ytplayer" type="text/html" height="854" width="480" src="https://www.youtube.com/embed/gnulvrbBw3o" />
+                  <iframe class="ytplayer" id="ytplayer" type="text/html" height="854" width="480" src="https://www.youtube.com/embed/gnulvrbBw3o"></iframe>
+                  </div>
+              </details>
+              <details>
+                <summary class="title"><b>Kucing Ngehe's Movie</b></summary>
+                <div class="content-ytplayer">
+                  <iframe class="ytplayer" id="ytplayer" type="text/html" height="854" width="480" src="https://youtube.com/embed/l1tfDe26hyw"></iframe>
                   </div>
               </details>
             </div>
@@ -95,6 +100,48 @@
         </div>
       </dialog>
     </figure>
+    <figure class="launcher-icon">
+      <button class="launcherButton" commandFor="animeList" command="show-modal">
+        <img src="../mytown/img/folder.png" class="icon-img">
+        <figcaption class="launcher-name">Anime List</figcaption>
+      </button>
+      <dialog class="animeDialog" id="animeList">
+        <div class="tab">
+          <h1 class="tab-name">Anime List.</h1>
+          <div class="theButtons">
+            <button class="closeButton" commandFor="animeList" command="close" value="close">X</button>
+          </div>
+        </div>
+        <div class="inside-home">
+          <div class="row">
+            <div class="item">
+              <details class="animeDetails">
+                <summary class="animeInformation">
+                  <figure class="animeFigure">
+                    <img class="titleImage" src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Shigatsu_wa_Kimi_no_Uso_logo.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original" />
+                    <figcaption class="animeTitle">
+                      Your Lie in April
+                    </figcaption>
+                  </figure>
+                </summary>
+                <div class="animeContent">
+                  <p><b>Original Title</b> </p>
+                  <p>四月は君の嘘<br>Shigatsu wa Kimi no Uso<br>source: <a href="https://en.wikipedia.org/wiki/Your_Lie_in_April">Wikipedia</a></a></p>
+                  <p><b>Rate</b></p>
+                  <p>My Rate: 9.99/10<br>MyAnimeList Rate: /10</p>
+                  <p><b>Synopsis</b></p>
+                  <p>Kousei Arima is a child prodigy known as the "Human Metronome" for playing the piano with precision and perfection. Guided by a strict mother and rigorous training, Kousei dominates every competition he enters, earning the admiration of his musical peers and praise from audiences. When his mother suddenly passes away, the subsequent trauma makes him unable to hear the sound of a piano, and he never takes the stage thereafter.<br><br>Nowadays, Kousei lives a quiet and unassuming life as a junior high school student alongside his friends Tsubaki Sawabe and Ryouta Watari. While struggling to get over his mother's death, he continues to cling to music. His monochrome life turns upside down the day he encounters the eccentric violinist Kaori Miyazono, who thrusts him back into the spotlight as her accompanist. Through a little lie, these two young musicians grow closer together as Kaori tries to fill Kousei's world with color.<br><br>[Written by MAL Rewrite]<br>source: <a href="https://myanimelist.net/anime/23273/Shigatsu_wa_Kimi_no_Uso">MyAnimeList</a></p>
+                  <p>test</p>
+                </div>
+              </details>
+            </div>
+          </div>
+        </div>
+      </dialog>
+    </figure>
+  </div>
+  <div>
+    <p>tesu</p>
   </div>
 </body>
 

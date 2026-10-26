@@ -40,16 +40,21 @@ body {
 	margin: 0;
 }
 
+a {
+  color: pink;
+}
+
 .launcher {
-  position: fixed;
   display: flex;
+  flex-wrap: wrap;
   justify-content: start;
   width: 100%;
   gap: 1px;
 }
 
 .launcher-icon {
-  position: static;
+  position: relative;
+  width: 80px;
   padding: 1px;
   margin: 1px;
 }
@@ -65,7 +70,7 @@ body {
 
 .icon-img {
   width: 40px;
-  height: auto;
+  height: 40px;
   padding: 1px;
   margin: 1px;
 }
@@ -96,6 +101,8 @@ body {
   background: linear-gradient(to right bottom, #ff1bd1, #e32ecb);
   width: 80%;
   height: 38px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .tab-name {
@@ -157,16 +164,7 @@ body {
   height: 80%;
 }
 
-.tab {
-  display: flex;
-  justify-content: space-between;
-}
-
-.tab-name {
-  font-size: 15px;
-}
-
-.Buttons {
+.theButtons {
   display: flex;
   margin-top: 6px;
   margin-bottom: 6px;
@@ -197,4 +195,47 @@ body {
   margin-top: -2px;
   margin-bottom: 3px;
   background: #390147;
+}
+
+.animeDialog {
+  background: linear-gradient(to right bottom, #ff1bd1, #b300c6ff);
+  position: fixed;
+  width: 80%;
+  height: 80%;
+  border: 1.5mm outset pink;
+  border-radius: 10px;
+  padding-left: 5px;
+  padding-top: 0px;
+  padding-right: 5px;
+  padding-bottom: 1px;
+}
+
+.animeDetails {
+  background: #390147;
+  color: white;
+  padding: 5px;
+}
+
+.animeFigure {
+  padding: 0px;
+  margin: 0px;
+}
+
+.animeTitle {
+  font-size: 18px;
+  text-align: center;
+}
+
+.animeInformation {
+  width: 100%
+}
+
+.animeContent {
+  text-wrap: wrap;
+  width: 100%;
+}
+
+.titleImage {
+  background: white;
+  width: 100%;
 }

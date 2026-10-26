@@ -36,8 +36,35 @@ body {
   min-height: 100vh;
 	font-family: Arial, sans-serif;
 	background: linear-gradient(to right bottom, #ff04b2, #d42bd0ff, #ff04b2);
-	background-size: 200% 300%;
+	background-size: cover;
+	background-image: url("https://d.fixupx.com/moudanji/status/2108166444232135049/photo/2");
+	background-position: center;
 	margin: 0;
+	z-index: -2;
+}
+
+.reminder:open {
+  background: linear-gradient(to right bottom, #ff6dfa, #f188ff, #ff6dfa);
+  position: fixed;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: auto;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 6px 6px 0px #00000f83;
+  border: solid 2px black;
+}
+
+.reminderButton {
+  border: solid 1px black;
+  background: #ff42ea;
+}
+
+.reminderButton:focus {
+  background: #762d69;
+  color: white;
 }
 
 .line {
@@ -91,6 +118,10 @@ body {
 
 .card p a {
   color: #a66;
+}
+
+.credit {
+  font-size: 10px;
 }
 
 .Dyru {

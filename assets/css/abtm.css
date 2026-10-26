@@ -53,6 +53,69 @@ body {
   height: 100%;
 }
 
+.items {
+  position: relative;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  margin: 0px;
+  gap: 12px;
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  position: relative;
+  background: blue;
+  width: 140px;
+  height: 13%;
+  border: solid 1.5px;
+}
+
+.card:open {
+  
+}
+
+summary {
+  list-style: none;
+  text-align: center;
+  background: #a123d98a;
+  color: white;
+}
+
+details:open {
+  color: white;
+  border: black solid 1.5px;
+}
+
+.heart {
+  position: relative;
+  background: #a12178;
+  width: 140px;
+  height: 13%;
+  border: solid 1.5px;
+}
+
+.heart:open {
+  color: white;
+  border: black solid 1.5px;
+}
+
+.sheart {
+  list-style: none;
+  text-align: center;
+  background: #ff01af;
+  color: white;
+}
+
+.sheart:focus {
+  background: #ae0077;
+}
+
+p {
+  text-align: center;
+}
+
 .centertext {
   bottom: 2%;
   right: 46%;
